@@ -31,7 +31,7 @@ class PaginaPrincipal : AppCompatActivity() {
 
         override fun onCreate() {
             super.onCreate()
-//guardamos una lista de la clase fecha, que nos debe devolver la peticion
+            //guardamos una lista de la clase fecha, que nos debe devolver la peticion
             diasdelmes  = ArrayList()
         }
     }
@@ -52,7 +52,6 @@ class PaginaPrincipal : AppCompatActivity() {
         @SerializedName("TELEFONO1") var TELEFONO1: String,
         @SerializedName("TELEFONO2") var TELEFONO2: String,
         @SerializedName("URLESCENARIO") var URLESCENARIO: String
-
     )
 
     annotation class SerializedName(val value: String)
@@ -66,8 +65,6 @@ class PaginaPrincipal : AppCompatActivity() {
         @SerializedName("IMAGENURL") var IMAGENURL: String,
         @SerializedName("IMPUESTO") var IMPUESTO: Number,
         @SerializedName("NOMBRE") var NOMBRE: String
-
-
     )
     data class LISTA_PRECIOS(
 
@@ -76,7 +73,6 @@ class PaginaPrincipal : AppCompatActivity() {
         @SerializedName("NOMBRE") var NOMBRE:String,
         @SerializedName("NUMERO") var NUMERO:Number,
         @SerializedName("TOTAL") var TOTAL:Number
-
     )
 
     //clase padre donde se utiliza relaciones de composicion con las clases anteriores para obtener una unica clase con los
@@ -148,6 +144,17 @@ class PaginaPrincipal : AppCompatActivity() {
 
 
         ): Call<MutableList<FECHA>>
+
+
+        @POST("LISTA_PRECIOS")
+        @FormUrlEncoded
+        fun registrationPostPrecios(
+            @Field("op") op: String,
+            @Field("idempresa") idempresa: String,
+            @Field("id") id: String,
+            @Field("calendario") calendario: String
+
+        ): Call<MutableList<LISTA_PRECIOS>>
     }
 
     private fun getRetrofit(): Retrofit {
@@ -156,4 +163,5 @@ class PaginaPrincipal : AppCompatActivity() {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
+
 }

@@ -38,6 +38,9 @@ android {
 }
 
 dependencies {
+    implementation 'com.google.firebase:firebase-database:19.2.1'
+    implementation 'com.google.firebase:firebase-auth-ktx:21.0.1'
+
 
     /////////////////////////POSIBLE ERROR O SOLUCION, LO QUE DIOSITO QUIERA////////////////////////
 
