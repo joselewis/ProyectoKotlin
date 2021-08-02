@@ -22,6 +22,7 @@
         <activity android:name=".PaginaPrincipal" />
         <activity android:name=".calendario" />
         <activity android:name=".compraTiquetes" />
+        <activity android:name=".PreciosObra" />
     </application>
 
 </manifest>

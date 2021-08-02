@@ -10,29 +10,28 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.item_layout.*
 
-class adapter : RecyclerView.Adapter<adapter.ViewHolder>()  {
-    //var estudiantes: MutableList<MainActivity.Estudiante> = ArrayList()
-    var fechas:MutableList<CapaDatos.FECHA> = ArrayList()
+class adaperPrecios { /*: RecyclerView.Adapter<adaperPrecios.ViewHolder>() {
+
+    var precios:MutableList<CapaDatos.LISTA_PRECIOS> = ArrayList()
 
     lateinit var context: Context
 
-    fun RecyclerAdapter(fechas: MutableList<CapaDatos.FECHA>, context: Context){
-        this. fechas = fechas
+    fun RecyclerAdapter(precios: MutableList<CapaDatos.LISTA_PRECIOS>, context: Context){
+        this. precios = precios
         this.context = context
 
     }
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val item = fechas.get(position)
+        val item = precios.get(position)
         holder.bind(item, context)
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
-        return ViewHolder(layoutInflater.inflate(R.layout.item_layout, parent, false))
+        return ViewHolder(layoutInflater.inflate(R.layout., parent, false))
     }
     override fun getItemCount(): Int {
-        return fechas.size
+        return precios.size
     }
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -49,7 +48,7 @@ class adapter : RecyclerView.Adapter<adapter.ViewHolder>()  {
         val botoncompra = view.findViewById(R.id.btncomprar) as Button
 
 
-        fun bind(fecha: CapaDatos.FECHA, context: Context){
+        fun bind(precios: CapaDatos.LISTA_PRECIOS, context: Context){
 
             nombre.text = fecha.EVENTO.NOMBRE
             descripcion.text = fecha.EVENTO.DESCRIPCION
@@ -74,5 +73,5 @@ class adapter : RecyclerView.Adapter<adapter.ViewHolder>()  {
         fun ImageView.loadUrl(url: String) {
             Picasso.with(context).load(url).into(this)
         }
-    }
+    }*/
 }

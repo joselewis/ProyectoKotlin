@@ -57,4 +57,7 @@ class MainActivity : AppCompatActivity() {
     private fun action(){
         startActivity(Intent(this, PaginaPrincipal::class.java))
     }
+
+
+
 }
