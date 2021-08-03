@@ -12,10 +12,12 @@ class calendario : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.calendario_layout)
 
+        //Llamado a los métodos
         comprarTiquetes()
         escogerFecha()
     }
 
+    //Botón que envía al usuario a la pantalla compraTiquetes
     private fun comprarTiquetes(){
         buttonComprarEntradasNuevas.setOnClickListener {
             val intent = Intent(this, compraTiquetes::class.java)
@@ -23,6 +25,7 @@ class calendario : AppCompatActivity() {
         }
     }
 
+    //Método que lanza una notificación rápida para elegir el día (Aun no funciona con la información del teatro)
     private fun escogerFecha(){
 
         calendarTeatro.setOnDateChangeListener { view, anno, mes, dia ->

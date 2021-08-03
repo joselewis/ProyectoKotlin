@@ -1,6 +1,7 @@
 package com.example.pruebateatro
 
 class CapaDatos {
+    //Datos obtenidos de la API
     data class EMPRESA(
 
         @SerializedName("CEDULAJURIDICA") var CEDULAJURIDICA: String,

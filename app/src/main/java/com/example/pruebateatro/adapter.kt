@@ -13,7 +13,7 @@ import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.item_layout.*
 
 class adapter : RecyclerView.Adapter<adapter.ViewHolder>()  {
-    //var estudiantes: MutableList<MainActivity.Estudiante> = ArrayList()
+
     var fechas:MutableList<CapaDatos.FECHA> = ArrayList()
 
     lateinit var context: Context
