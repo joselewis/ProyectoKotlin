@@ -57,6 +57,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
     implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.google.android.gms:play-services-wallet:18.0.0'
+    implementation  'com.google.android.gms:play-services-location:17.0.0'
 
     /////////////////////////////////////FIREBASE///////////////////////////////////////////////////
 

@@ -1,7 +1,9 @@
 package com.example.pruebateatro
 
+import android.app.Application
+
 class CapaDatos {
-    //Datos obtenidos de la API
+
     data class EMPRESA(
 
         @SerializedName("CEDULAJURIDICA") var CEDULAJURIDICA: String,
@@ -32,6 +34,7 @@ class CapaDatos {
         @SerializedName("IMPUESTO") var IMPUESTO: Number,
         @SerializedName("NOMBRE") var NOMBRE: String
     )
+
     data class LISTA_PRECIOS(
 
         @SerializedName("CODIGO_ACCESO") var CODIGO_ACCESO:String,
@@ -41,8 +44,6 @@ class CapaDatos {
         @SerializedName("TOTAL") var TOTAL:Number
     )
 
-    //clase padre donde se utiliza relaciones de composicion con las clases anteriores para obtener una unica clase con los
-    //atributos necesarios que devuelve la peticion
     data class FECHA(
 
         @SerializedName("ANNO") var ANNO: Number,
@@ -63,4 +64,27 @@ class CapaDatos {
         @SerializedName("TERMINAL") var TERMINAL:String
 
     )
+/*
+    data class foto(
+
+        var ejex:String,
+        var ejey:String,
+        var imagencruda:String
+    )
+
+*/
+
+    class SharedApp: Application(){
+
+        companion object {
+            lateinit var diasdelmes: MutableList<FECHA>
+        }
+
+        override fun onCreate() {
+            super.onCreate()
+
+            diasdelmes  = ArrayList()
+        }
+    }
+
 }

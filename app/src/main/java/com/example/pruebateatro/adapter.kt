@@ -15,30 +15,30 @@ import kotlinx.android.synthetic.main.item_layout.*
 class adapter : RecyclerView.Adapter<adapter.ViewHolder>()  {
 
     var fechas:MutableList<CapaDatos.FECHA> = ArrayList()
-
     lateinit var context: Context
 
     fun RecyclerAdapter(fechas: MutableList<CapaDatos.FECHA>, context: Context){
         this. fechas = fechas
         this.context = context
-
     }
+
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = fechas.get(position)
         holder.bind(item, context)
     }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         return ViewHolder(layoutInflater.inflate(R.layout.item_layout, parent, false))
     }
+
     override fun getItemCount(): Int {
         return fechas.size
     }
 
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+    class ViewHolder(view: View ) : RecyclerView.ViewHolder(view) {
 
         val nombre = view.findViewById(R.id.nombre) as TextView
-
         val descripcion = view.findViewById(R.id.descripcion) as TextView
         val horadeinicio = view.findViewById(R.id.horadeinicio) as TextView
         val teatro = view.findViewById(R.id.teatro) as TextView
@@ -46,11 +46,10 @@ class adapter : RecyclerView.Adapter<adapter.ViewHolder>()  {
         val duracion = view.findViewById(R.id.duracion) as TextView
         val foto = view.findViewById(R.id.foto) as ImageView
         val dia = view.findViewById(R.id.dia) as TextView
-        val botoncompra = view.findViewById(R.id.btncomprar) as Button
+        val buttonButacas = view.findViewById(R.id.buttonVerButacas) as Button
 
 
         fun bind(fecha: CapaDatos.FECHA, context: Context){
-
             nombre.text = fecha.EVENTO.NOMBRE
             descripcion.text = fecha.EVENTO.DESCRIPCION
             horadeinicio.text= "Empieza: " +  fecha.NUMERO_HORA_INICIA.toString() + ":" + fecha.NUMERO_MINUTO_INICIA.toString()
@@ -59,14 +58,23 @@ class adapter : RecyclerView.Adapter<adapter.ViewHolder>()  {
             dia.text = fecha.DIA.toString()
             foto.loadUrl("http://taquillas.sistemcr.com/Imageneseventos/" + fecha.EVENTO.ID.toString() +".jpg")
 
-            botoncompra.setOnClickListener {
+            //Variables para APIs
+            var idEmpresa =fecha.EMPRESA.ID.toString()
+            var id = fecha.LISTA_PRECIOS.ID.toString()
+            var calendario = fecha.ID.toString()
 
-                val intent = Intent(context, calendario::class.java)
-                intent.putExtra("Obra", fecha.EVENTO.ID.toString())
-                intent.putExtra("Precio", fecha.LISTA_PRECIOS.ID.toString())
-                intent.putExtra("Empresa", fecha.EMPRESA.ID.toString())
-                intent.putExtra("Fecha", fecha.ID.toString())
+            /*CapaDatos.SharedApp.nombreempresa = fecha.EMPRESA.NOMBRE
+            CapaDatos.SharedApp.fechaevento = fecha.ANNO.toString() + "/" + fecha.DIA.toString() + "/" + fecha.MES.toString()
+            CapaDatos.SharedApp.horainicio = fecha.NUMERO_HORA_INICIA.toString() + "-" + fecha.NUMERO_MINUTO_INICIA.toString()
+            CapaDatos.SharedApp.nombrevento = fecha.EVENTO.DESCRIPCION
+*/
+            //Botón Comprar Entradas
+            buttonButacas.setOnClickListener {
 
+                val intent = Intent( context, compraTiquetes::class.java)
+                intent.putExtra("idEmpresa", idEmpresa)
+                intent.putExtra("id", id)
+                intent.putExtra("calendario", calendario)
                 context.startActivity(intent)
             }
         }
@@ -74,5 +82,7 @@ class adapter : RecyclerView.Adapter<adapter.ViewHolder>()  {
         fun ImageView.loadUrl(url: String) {
             Picasso.with(context).load(url).into(this)
         }
+
     }
+
 }
