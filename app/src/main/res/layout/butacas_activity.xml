@@ -7,28 +7,33 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="410dp"
+        android:layout_width="0dp"
         android:layout_height="102dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/textViewSeleccionarAsientos">
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/imageViewButacaVacia1"
             android:layout_width="100dp"
             android:layout_height="100dp"
             app:srcCompat="@drawable/butaca" />
+
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/imageViewButacaVacia2"
             android:layout_width="100dp"
             android:layout_height="100dp"
             app:srcCompat="@drawable/butaca" />
+
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/imageViewButacaVacia3"
             android:layout_width="100dp"
             android:layout_height="100dp"
             app:srcCompat="@drawable/butaca" />
+
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/imageViewButacaVacia4"
             android:layout_width="100dp"
@@ -39,10 +44,12 @@
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="410dp"
+        android:layout_width="0dp"
         android:layout_height="101dp"
+        android:layout_marginTop="4dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
@@ -51,29 +58,35 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             app:srcCompat="@drawable/butaca" />
+
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/imageViewButacaVacia6"
             android:layout_width="100dp"
             android:layout_height="100dp"
             app:srcCompat="@drawable/butaca" />
+
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/imageViewButacaVacia7"
             android:layout_width="100dp"
             android:layout_height="100dp"
             app:srcCompat="@drawable/butaca" />
+
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/imageViewButacaVacia8"
             android:layout_width="100dp"
             android:layout_height="100dp"
             app:srcCompat="@drawable/butaca" />
+
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="0dp"
         android:layout_height="91dp"
+        android:layout_marginTop="8dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
@@ -82,16 +95,19 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             app:srcCompat="@drawable/butaca" />
+
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/imageViewButacaVacia10"
             android:layout_width="100dp"
             android:layout_height="100dp"
             app:srcCompat="@drawable/butaca" />
+
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/imageViewButacaVacia11"
             android:layout_width="100dp"
             android:layout_height="100dp"
             app:srcCompat="@drawable/butaca" />
+
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/imageViewButacaVacia12"
             android:layout_width="100dp"
@@ -104,8 +120,10 @@
         android:id="@+id/linearLayout5"
         android:layout_width="0dp"
         android:layout_height="92dp"
+        android:layout_marginTop="8dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
@@ -137,12 +155,18 @@
 
     <TextView
         android:id="@+id/textViewButacasEscogidas"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginLeft="152dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginRight="125dp"
         android:textColor="#000000"
         android:textSize="24dp"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
 
@@ -150,9 +174,26 @@
         android:id="@+id/buttonComprarEntradas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="12dp"
         android:text="Comprar"
+        android:textStyle="italic"
+        app:backgroundTint="#9C27B0"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewButacasEscogidas" />
+
+    <TextView
+        android:id="@+id/textViewSeleccionarAsientos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Seleccione los asientos"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

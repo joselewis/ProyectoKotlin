@@ -54,13 +54,6 @@ class calendario : AppCompatActivity() {
             runOnUiThread {
                 CapaDatos.SharedApp.diasdelmes = call.body()!!
 
-                if (dia == 1){
-                    for (i in CapaDatos.SharedApp.diasdelmes) {
-                            textViewFechaEvento.setText(
-                                textViewFechaEvento.text.toString() + i.DIA.toInt().toString() + "/" + i.MES.toInt().toString() + " , ")
-                        }
-                }
-
                 for (i in CapaDatos.SharedApp.diasdelmes) {
 
                     if (i.DIA.toInt() == dia) {

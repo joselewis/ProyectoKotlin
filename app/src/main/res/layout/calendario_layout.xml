@@ -8,41 +8,35 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recylerViewObrasActivas"
         android:layout_width="0dp"
-        android:layout_height="177dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="139dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarObras" />
 
     <CalendarView
         android:id="@+id/calendarObras"
         android:layout_width="0dp"
         android:layout_height="360dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewTextoCalen" />
 
     <TextView
-        android:id="@+id/textViewFechaEvento"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/recylerViewObrasActivas"
+        android:id="@+id/textViewTextoCalen"
+        android:layout_width="382dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="56dp"
+        android:text="Seleccione la fecha que desea para la obra"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/buttonMostrarDiasObra"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ver días"
-        app:layout_constraintBottom_toTopOf="@+id/textViewFechaEvento"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/calendarObras"
-        app:layout_constraintVertical_bias="0.481" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
