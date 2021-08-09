@@ -64,27 +64,17 @@ class CapaDatos {
         @SerializedName("TERMINAL") var TERMINAL:String
 
     )
-/*
-    data class foto(
 
-        var ejex:String,
-        var ejey:String,
-        var imagencruda:String
-    )
-
-*/
-
-    class SharedApp: Application(){
+    class SharedApp: Application() {
 
         companion object {
+
             lateinit var diasdelmes: MutableList<FECHA>
         }
 
         override fun onCreate() {
             super.onCreate()
-
-            diasdelmes  = ArrayList()
+            diasdelmes = ArrayList()
         }
     }
-
 }

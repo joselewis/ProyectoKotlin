@@ -70,10 +70,12 @@
         android:text="Registrarse"
         android:textColor="#FFFFFF"
         app:backgroundTint="#9C27B0"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtRegistroNombreUsuario" />
+        app:layout_constraintTop_toBottomOf="@+id/txtRegistroNombreUsuario"
+        app:layout_constraintVertical_bias="0.008" />
 
     <EditText
         android:id="@+id/txtRegistroApellido"
@@ -116,16 +118,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonRegistrarNuevo"
         app:layout_constraintVertical_bias="0.058" />
-
-    <Button
-        android:id="@+id/buttonTomarFoto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Tomar Foto"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonRegistrarNuevo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

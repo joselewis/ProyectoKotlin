@@ -4,24 +4,19 @@ import android.app.Application
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
-import android.location.LocationManager
-import android.net.Uri
 import android.os.Bundle
 import android.text.TextUtils
-import android.util.Log
 import android.view.View
 import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import kotlinx.android.synthetic.main.item_layout.*
+import kotlinx.android.synthetic.main.recyclerv_item_calendar.*
 import kotlinx.android.synthetic.main.registro_usuario.*
 
 class RegistrarUsuario : AppCompatActivity() {
@@ -142,40 +137,4 @@ class RegistrarUsuario : AppCompatActivity() {
                 }
             }
     }
-////////////////////////////////////////////////MAPA Y CAMARA///////////////////////////////////////
-/*
-    private var locationManager : LocationManager? = null
-    private lateinit var fusedLocationClient: FusedLocationProviderClient
-
-    lateinit var mRecyclerView : RecyclerView
-    val mAdapter : adaperCamaraUbi = adaperCamaraUbi()
-
-    class Prefs (context: Context) {
-        val PREFS_NAME = "com.cursokotlin.sharedpreferences"
-        val SHARED_NAME = ""
-        val prefs: SharedPreferences = context.getSharedPreferences(PREFS_NAME, 0)
-
-        var name: String
-            get() = prefs.getString(SHARED_NAME, "")
-            set(value) = prefs.edit().putString(SHARED_NAME, value).apply()
-    }
-
-    private val PERMISSION_CODE = 1000;
-    private val IMAGE_CAPTURE_CODE = 1001
-    var image_uri: Uri? = null
-
-    class SharedApp : Application() {
-        companion object {
-            lateinit var fotos: MutableList<foto>
-            lateinit var prefs: Prefs
-
-        }
-
-        override fun onCreate() {
-            super.onCreate()
-            fotos = ArrayList()
-            prefs = Prefs(applicationContext)
-        }
-    }
- */
 }

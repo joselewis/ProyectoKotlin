@@ -10,7 +10,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.item_layout.*
+import kotlinx.android.synthetic.main.recyclerv_item_calendar.*
 
 class adapter : RecyclerView.Adapter<adapter.ViewHolder>()  {
 
@@ -29,7 +29,7 @@ class adapter : RecyclerView.Adapter<adapter.ViewHolder>()  {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
-        return ViewHolder(layoutInflater.inflate(R.layout.item_layout, parent, false))
+        return ViewHolder(layoutInflater.inflate(R.layout.recyclerv_item_calendar, parent, false))
     }
 
     override fun getItemCount(): Int {
@@ -44,7 +44,7 @@ class adapter : RecyclerView.Adapter<adapter.ViewHolder>()  {
         val teatro = view.findViewById(R.id.teatro) as TextView
         val horafinaliza = view.findViewById(R.id.horafinaliza) as TextView
         val duracion = view.findViewById(R.id.duracion) as TextView
-        val foto = view.findViewById(R.id.foto) as ImageView
+        val foto = view.findViewById(R.id.fotoObra) as ImageView
         val dia = view.findViewById(R.id.dia) as TextView
         val buttonButacas = view.findViewById(R.id.buttonVerButacas) as Button
 
@@ -82,7 +82,5 @@ class adapter : RecyclerView.Adapter<adapter.ViewHolder>()  {
         fun ImageView.loadUrl(url: String) {
             Picasso.with(context).load(url).into(this)
         }
-
     }
-
 }

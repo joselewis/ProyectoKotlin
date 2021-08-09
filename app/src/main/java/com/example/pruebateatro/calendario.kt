@@ -30,7 +30,6 @@ class calendario : AppCompatActivity() {
         calendarObras.setOnDateChangeListener { view, year, month, dayOfMonth ->
             var mes = month + 1
             obtenerObras(mes.toString(), year.toString(), dayOfMonth)
-
         }
         //mostrarDia()
     }
@@ -57,26 +56,25 @@ class calendario : AppCompatActivity() {
             runOnUiThread {
                 CapaDatos.SharedApp.diasdelmes = call.body()!!
 
-                    /*if (dia == 1){
-                        for (i in CapaDatos.SharedApp.diasdelmes) {
-                                textViewFechaEvento.setText(
-                                    textViewFechaEvento.text.toString() + i.DIA.toInt().toString() + "/" + i.MES.toInt().toString() + " , ")
-                            }
-                    }*/
-
+                if (dia == 1){
                     for (i in CapaDatos.SharedApp.diasdelmes) {
-
-                        if (i.DIA.toInt() == dia) {
-
-                            diaEvento.add(i)
-                            break
+                            textViewFechaEvento.setText(
+                                textViewFechaEvento.text.toString() + i.DIA.toInt().toString() + "/" + i.MES.toInt().toString() + " , ")
                         }
+                }
+
+                for (i in CapaDatos.SharedApp.diasdelmes) {
+
+                    if (i.DIA.toInt() == dia) {
+
+                        diaEvento.add(i)
+                        break
                     }
+                }
                 setUpRecyclerView()
             }
         }
     }
-
 
     interface APIService {
         @POST("Calendario")
