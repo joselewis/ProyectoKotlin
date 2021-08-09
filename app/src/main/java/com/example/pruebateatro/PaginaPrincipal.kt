@@ -47,7 +47,6 @@ import java.io.FileNotFoundException
 
 class PaginaPrincipal : AppCompatActivity() {
 
-
     //Variables para realizar la conexión con la base de datos
     private lateinit var auth: FirebaseAuth
     var databaseReference: DatabaseReference? = null

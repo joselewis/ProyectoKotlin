@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="410dp"
+        android:layout_height="102dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imageViewButacaVacia1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/butaca" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imageViewButacaVacia2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/butaca" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imageViewButacaVacia3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/butaca" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imageViewButacaVacia4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/butaca" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="410dp"
+        android:layout_height="101dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imageViewButacaVacia5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/butaca" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imageViewButacaVacia6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/butaca" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imageViewButacaVacia7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/butaca" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imageViewButacaVacia8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/butaca" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="91dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imageViewButacaVacia9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/butaca" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imageViewButacaVacia10"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/butaca" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imageViewButacaVacia11"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/butaca" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imageViewButacaVacia12"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/butaca" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="92dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imageViewButacaVacia13"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/butaca" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imageViewButacaVacia14"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/butaca" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imageViewButacaVacia15"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/butaca" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imageViewButacaVacia16"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/butaca" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewButacasEscogidas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+    <Button
+        android:id="@+id/buttonComprarEntradas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Comprar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewButacasEscogidas" />
+</androidx.constraintlayout.widget.ConstraintLayout>

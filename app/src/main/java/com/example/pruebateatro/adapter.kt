@@ -71,7 +71,7 @@ class adapter : RecyclerView.Adapter<adapter.ViewHolder>()  {
             //Botón Comprar Entradas
             buttonButacas.setOnClickListener {
 
-                val intent = Intent( context, compraTiquetes::class.java)
+                val intent = Intent( context, Butacas::class.java)
                 intent.putExtra("idEmpresa", idEmpresa)
                 intent.putExtra("id", id)
                 intent.putExtra("calendario", calendario)

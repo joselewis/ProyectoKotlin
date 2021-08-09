@@ -25,6 +25,7 @@
         <activity android:name=".calendario" />
         <activity android:name=".compraTiquetes" />
         <activity android:name=".PreciosObra" />
+        <activity android:name=".Butacas" />
     </application>
 
 </manifest>

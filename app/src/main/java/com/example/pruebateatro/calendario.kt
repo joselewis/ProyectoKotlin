@@ -31,7 +31,6 @@ class calendario : AppCompatActivity() {
             var mes = month + 1
             obtenerObras(mes.toString(), year.toString(), dayOfMonth)
         }
-        //mostrarDia()
     }
 
     fun setUpRecyclerView() {
@@ -41,7 +40,6 @@ class calendario : AppCompatActivity() {
         mRecyclerView.layoutManager = LinearLayoutManager(this)
         mAdapter.RecyclerAdapter(diaEvento, this)
         mRecyclerView.adapter = mAdapter
-
     }
 
     fun obtenerObras(mes: String, anno: String, dia: Int) {
