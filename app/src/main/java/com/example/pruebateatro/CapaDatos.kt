@@ -77,4 +77,7 @@ class CapaDatos {
             diasdelmes = ArrayList()
         }
     }
+
+
+
 }

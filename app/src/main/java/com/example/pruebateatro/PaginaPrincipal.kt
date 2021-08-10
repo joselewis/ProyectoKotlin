@@ -64,6 +64,7 @@ class PaginaPrincipal : AppCompatActivity() {
         //Llamda al método que carga el perfil del usuario
         loadProfile()
         cargarObras()
+        cargarTiquetesComprados()
     }
 
     private fun loadProfile() {
@@ -94,6 +95,13 @@ class PaginaPrincipal : AppCompatActivity() {
     private fun cargarObras() {
         buttonVerObras.setOnClickListener {
             val intent = Intent(this, calendario::class.java)
+            startActivity(intent)
+        }
+    }
+
+    private fun cargarTiquetesComprados() {
+        buttonTomarFoto.setOnClickListener {
+            val intent = Intent(this, tiquetes::class.java)
             startActivity(intent)
         }
     }

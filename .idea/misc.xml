@@ -7,7 +7,7 @@
         <entry key="..\:/Users/JOSEF/AndroidStudioProjects/PruebaTeatro/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/JOSEF/AndroidStudioProjects/PruebaTeatro/app/src/main/res/layout/butacas_activity.xml" value="0.25" />
         <entry key="..\:/Users/JOSEF/AndroidStudioProjects/PruebaTeatro/app/src/main/res/layout/calendario_layout.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/JOSEF/AndroidStudioProjects/PruebaTeatro/app/src/main/res/layout/compra_tiquetes.xml" value="0.20199275362318841" />
+        <entry key="..\:/Users/JOSEF/AndroidStudioProjects/PruebaTeatro/app/src/main/res/layout/compra_tiquetes.xml" value="0.25" />
         <entry key="..\:/Users/JOSEF/AndroidStudioProjects/PruebaTeatro/app/src/main/res/layout/item_estudiante_list.xml" value="0.33" />
         <entry key="..\:/Users/JOSEF/AndroidStudioProjects/PruebaTeatro/app/src/main/res/layout/item_layout.xml" value="0.20199275362318841" />
         <entry key="..\:/Users/JOSEF/AndroidStudioProjects/PruebaTeatro/app/src/main/res/layout/item_recycler.xml" value="0.20199275362318841" />
@@ -17,6 +17,7 @@
         <entry key="..\:/Users/JOSEF/AndroidStudioProjects/PruebaTeatro/app/src/main/res/layout/recycler.xml" value="0.22" />
         <entry key="..\:/Users/JOSEF/AndroidStudioProjects/PruebaTeatro/app/src/main/res/layout/recyclerv_item_calendar.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/JOSEF/AndroidStudioProjects/PruebaTeatro/app/src/main/res/layout/registro_usuario.xml" value="0.25" />
+        <entry key="..\:/Users/JOSEF/AndroidStudioProjects/PruebaTeatro/app/src/main/res/layout/tiquete_activity.xml" value="0.25" />
       </map>
     </option>
   </component>

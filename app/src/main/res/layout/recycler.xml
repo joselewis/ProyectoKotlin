@@ -8,7 +8,7 @@
     android:padding="8dp">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/fotoUsuario"
+        android:id="@+id/fotoCodigoQR"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/sweetblackcat"/>
@@ -56,6 +56,7 @@
             android:layout_marginTop="5dp"
             android:text="Ver obras"
             android:textStyle="italic"
+            app:backgroundTint="#9C27B0"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.181"
@@ -69,8 +70,9 @@
             android:layout_height="44dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="5dp"
-            android:text="Tomar Foto"
+            android:text="Tiquetes"
             android:textStyle="italic"
+            app:backgroundTint="#9C27B0"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
